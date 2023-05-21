@@ -1,19 +1,9 @@
-
-    <!-- <nav class="flex space-x-4">
-        <a href="/" class="font-bold px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">Home</a>
-        <a href="/about" class="font-bold px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">About
-            me</a>
-        <a href="/projects"
-            class="font-bold px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">Projects</a>
-        <a href="/contact"
-            class="font-bold px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">Contact</a>
-    </nav> -->
 <template>
-    <div class="sticky top-0 bg-white rounded-lg">
+    <div class="sticky top-0 bg-slate-400">
         <nav class="container px-6 py-8 mx-auto md:flex md:justify-between md:items-center">
             <div class="flex items-center justify-between">
                 <RouterLink to="/" class="text-xl font-bold text-gray-800 md:text-2xl hover:text-blue-400">
-                    Logo
+                    <img class="w-36" src="/nav-logo.png"/>
                 </RouterLink>
                 <div @click="showMenu = !showMenu" class="flex md:hidden">
                     <button type="button" class="text-gray-800 hover:text-gray-400 focus:outline-none focus:text-gray-400">
@@ -26,30 +16,26 @@
                 </div>
             </div>
 
-
             <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
             <ul :class="showMenu ? 'flex' : 'hidden'"
-                class="flex-col mt-8 space-y-2 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0">
-                <RouterLink :to="'/'">
-                    <li class="font-bold px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">
-                        Home
-                    </li>
-                </RouterLink>
-                <RouterLink :to="'/about'">
-                    <li class="font-bold px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">
-                        About
-                    </li>
-                </RouterLink>
-                <RouterLink :to="'/projects'">
-                    <li class="font-bold px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">
-                        Projects
-                    </li>
-                </RouterLink>
-                <RouterLink :to="'/contact'">
-                    <li class="font-bold px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">
-                        Contact
-                    </li>
-                </RouterLink>
+                class="flex-col mt-8 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-5 md:mt-0">
+
+                <li class="font-bold px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">
+                    <RouterLink :to="'/'"> Home </RouterLink>
+                </li>
+
+                <li class="font-bold px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">
+                    <RouterLink :to="'/about'"> About </RouterLink>
+                </li>
+
+                <li class="font-bold px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">
+                    <RouterLink :to="'/projects'"> Projects </RouterLink>
+                </li>
+
+                <li class="font-bold px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">
+                    <RouterLink :to="'/contact'"> Contact </RouterLink>
+                </li>
+
                 <div class="flex justify-between items-center hidden sm:block">
                     <a target="_blank" href="https://github.com/jarvin-s/hc-group-app"
                         className="ml-6 block text-slate-400 hover:text-slate-500 dark:hover:text-slate-300">
@@ -63,12 +49,14 @@
         </nav>
     </div>
 </template>
+
 <script>
 import { RouterLink } from 'vue-router'
 export default {
     data() {
         return {
             showMenu: false,
+            isActive: true
         };
     },
 };
