@@ -18,7 +18,7 @@
 
             <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
             <ul :class="showMenu ? 'flex' : 'hidden'"
-                class="flex-col mt-8 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-5 md:mt-0">
+                class="flex-col mt-8 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-1 md:mt-0">
 
                 <li class="font-bold px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">
                     <RouterLink :to="'/'"> Home </RouterLink>
