@@ -37,7 +37,7 @@
                 </li>
 
                 <div class="flex justify-between items-center hidden sm:block">
-                    <a target="_blank" href="https://github.com/jarvin-s/hc-group-app"
+                    <a target="_blank" href="https://github.com/jarvin-s/portfolio"
                         className="ml-6 block text-slate-400 hover:text-slate-500 dark:hover:text-slate-300">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                             <path
