@@ -1,5 +1,5 @@
 <template>
-    <div class="sticky top-0 bg-slate-400">
+    <div class="sticky top-0">
         <nav class="container px-6 py-8 mx-auto md:flex md:justify-between md:items-center">
             <div class="flex items-center justify-between">
                 <RouterLink to="/" class="text-xl font-bold text-gray-800 md:text-2xl hover:text-blue-400">
