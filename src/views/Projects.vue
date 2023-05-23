@@ -5,7 +5,7 @@
                 <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
                     <!--Card 1-->
                     <div v-for="repo in repos" :key="repo.id" class="rounded bg-white overflow-hidden shadow-lg">
-                        <img class="w-full" src="" alt="Mountain">
+                        <img class="w-full" v-if="repo.name === repo.name" :src="`/projects/${repo.name}.png`"/>
                         <div class="px-3 py-4">
                             <div class="font-bold text-xl mb-2 text-black">{{ repo.name }}</div>
                             <p class="text-gray-700 text-base">
@@ -13,9 +13,13 @@
                             </p>
                         </div>
                         <div class="px-6 pt-4 pb-2">
-                            <span
-                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{{
-                                    repo.language }}</span>
+                            <img class="w-10 justify-bottom" v-if="repo.language === repo.language"
+                                :src="`/languages/${repo.language}.svg`" :alt="`${repo.language} SVG`" />
+                            <div v-else>
+                                <h1 class="text-sky-400">hey</h1>
+                            </div>
+
+                            <img class="w-10 justify-bottom" v-if="repo.language === 'C#'" src="/languages/Csharp.svg" />
                         </div>
                     </div>
                 </div>
@@ -35,9 +39,17 @@ export default {
         try {
             let response = await fetch("https://api.github.com/users/jarvin-s/repos");
             this.repos = await response.json();
+
+            this.repos = this.filteredRepos(this.repos);
         } catch (error) {
             console.log(error);
         }
+    },
+    methods: {
+        filteredRepos(repos) {
+            return repos.filter(repo => !["meepspeak", "plugin-hub"].includes(repo.name));
+        }
     }
+
 }
 </script>
