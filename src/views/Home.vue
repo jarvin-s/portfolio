@@ -8,15 +8,15 @@
                         <h1 class="font-bold font-sans">Software Development student</h1>
                         <p class="text-gray-600 font-sans">My name is Jarvin Siegers and I'm a software
                             development student.</p>
-                        <div class="flex flex-row">
-                            <img class="w-10" src="/languages/HTML.svg" />
-                            <img class="w-10" src="/languages/CSS.svg" />
-                            <img class="w-10" src="/languages/JavaScript.svg" />
-                            <img class="w-10" src="/languages/Vue.svg" />
-                            <img class="w-10" src="/languages/tailwind.svg" />
-                            <img class="w-10" src="/languages/git.svg" />
-                            <img class="w-10" src="/languages/mysql.svg" />
-                        </div>
+                        <ul class="flex flex-row">
+                            <li><img class="w-10" src="/languages/HTML.svg" /></li>
+                            <li><img class="w-10" src="/languages/CSS.svg" /></li>
+                            <li><img class="w-10" src="/languages/JavaScript.svg" /></li>
+                            <li><img class="w-10" src="/languages/Vue.svg" /></li>
+                            <li><img class="w-10" src="/languages/tailwind.svg" /></li>
+                            <li><img class="w-10" src="/languages/git.svg" /></li>
+                            <li><img class="w-10" src="/languages/mysql.svg" /></li>
+                        </ul>
                     </div>
                 </div>
             </div>
