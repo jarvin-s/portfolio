@@ -113,7 +113,6 @@ li:hover {
 
 /* Active hover navbar */
 a.router-link-exact-active {
-  transition: 300ms;
   font-weight: bold;
 }
 
