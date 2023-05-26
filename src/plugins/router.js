@@ -21,6 +21,11 @@ const routes = [
         name: 'contact',
         component: () => import('@/views/Contact.vue')
     },
+    {
+        path: '/single-project',
+        name: 'single-project',
+        component: () => import('@/views/SingleProject.vue')
+    }
 ]
 
 const router = createRouter({
