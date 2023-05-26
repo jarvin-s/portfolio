@@ -10,6 +10,7 @@
 
   color-scheme: light dark;
   /* color: rgba(255, 255, 255, 0.87); */
+  background-color: #696969;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -61,7 +62,10 @@
   height: 100vh;
   position: relative;
   width: 100%;
-  background-color: #302f2f;
+}
+
+.nav-container-div {
+  background-color: #e9e9e9;
 }
 
 h1 {
@@ -109,8 +113,7 @@ li:hover {
 
 /* Active hover navbar */
 a.router-link-exact-active {
-  transition: 300ms;
-  color: rgb(145, 41, 23);
+  font-weight: bold;
 }
 
 .nav-container {

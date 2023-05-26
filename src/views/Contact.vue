@@ -1,5 +1,5 @@
 <template>
-    <h1 class="text-3xl font-bold underline">Hello, Contact</h1>
+    <h1 class="text-3xl font-bold">Contact</h1>
 </template>
 
 <script setup>
