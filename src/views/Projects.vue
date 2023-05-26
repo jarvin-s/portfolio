@@ -5,7 +5,7 @@
                 <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
                     <!--Card 1-->
                     <div v-for="repo in repos" :key="repo.id" class="rounded bg-white overflow-hidden shadow-lg">
-                        <img class="w-full" v-if="repo.name === repo.name" :src="`/projects/${repo.name}.png`"/>
+                        <img class="w-full" v-if="repo.name === repo.name" :src="`/my-projects/${repo.name}.png`"/>
                         <div class="px-3 py-4">
                             <div class="font-bold text-xl mb-2 text-black">{{ repo.name }}</div>
                             <p class="text-gray-700 text-base">
