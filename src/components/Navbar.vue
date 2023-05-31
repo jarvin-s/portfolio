@@ -25,9 +25,9 @@
                     <RouterLink :to="'/'"> Home </RouterLink>
                 </li>
 
-                <li class="px-3 py-2 rounded-lg text-black hover:bg-gray-300">
+                <!-- <li class="px-3 py-2 rounded-lg text-black hover:bg-gray-300">
                     <RouterLink :to="'/about'"> About </RouterLink>
-                </li>
+                </li> -->
 
                 <li class="px-3 py-2 rounded-lg text-black hover:bg-gray-300">
                     <RouterLink :to="'/projects'"> Projects </RouterLink>
