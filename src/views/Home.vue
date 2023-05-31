@@ -5,7 +5,7 @@
                 <div class="hero-main flex justify-center items-center gap-10 flex-col md:flex-row relative">
                     <div class="hero-img"></div>
                     <div class="hero-text">
-                        <h1 class="font-bold font-sans">Software Development student</h1>
+                        <h1 class="font-bold font-sans">Software Developer</h1>
                         <p class="text-gray-900 font-sans">My name is Jarvin Siegers and I'm a software
                             development student.</p>
                         <ul class="flex flex-row">
@@ -24,7 +24,7 @@
     </section>
 </template>
 
-<script setup>
+<script>
 </script>
 
 <style>
