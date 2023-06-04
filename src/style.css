@@ -61,14 +61,9 @@
 /* Hero stuff */
 .hero {
   display: flex;
-  flex-direction: column;
-  height: 100vh;
+  flex-direction: row;
   position: relative;
   width: 100%;
-}
-
-.nav-container-div {
-  background-color: #f7f7f7;
 }
 
 h1 {
@@ -102,9 +97,9 @@ button:focus-visible {
   padding: 2em;
 }
 
-svg:hover {
+/* svg:hover {
   fill: rgb(80, 79, 79);
-}
+} */
 
 li:hover {
   transition: 300ms;

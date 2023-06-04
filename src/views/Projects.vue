@@ -1,6 +1,6 @@
 <template>
     <section id="projects" class="hero">
-        <div class="container mt-10 py-6 justify-center">
+        <!-- <div class="container mt-10 py-6 justify-center">
             <div class="content flex justify-center flex-col">
                 <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
                     <div v-for="repo in repos" :key="repo.id" class="rounded bg-white overflow-hidden shadow-lg">
@@ -19,7 +19,32 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
+        <v-card class="mx-auto" max-width="400">
+            <v-img class="align-end text-white" height="200" src="https://cdn.vuetifyjs.com/images/cards/docks.jpg" cover>
+                <v-card-title>Top 10 Australian beaches</v-card-title>
+            </v-img>
+
+            <v-card-subtitle class="pt-4">
+                Number 10
+            </v-card-subtitle>
+
+            <v-card-text>
+                <div>Whitehaven Beach</div>
+
+                <div>Whitsunday Island, Whitsunday Islands</div>
+            </v-card-text>
+
+            <v-card-actions>
+                <v-btn color="orange">
+                    Share
+                </v-btn>
+
+                <v-btn color="orange">
+                    Explore
+                </v-btn>
+            </v-card-actions>
+        </v-card>
         <v-card class="mx-auto" max-width="400">
             <v-img class="align-end text-white" height="200" src="https://cdn.vuetifyjs.com/images/cards/docks.jpg" cover>
                 <v-card-title>Top 10 Australian beaches</v-card-title>

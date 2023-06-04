@@ -1,12 +1,12 @@
 <template>
-    <section id="home" class="hero">
+    <section id="home" class="hero dark:bg-slate-900">
         <div class="container mt-10 py-6 justify-center">
             <div class="content flex justify-center items-center gap-x-12 flex-col md:flex-row">
                 <div class="hero-main flex justify-center items-center gap-10 flex-col md:flex-row relative">
                     <div class="hero-img"></div>
                     <div class="hero-text">
-                        <h1 class="font-bold font-sans">Software Developer</h1>
-                        <p class="text-gray-900 font-sans">My name is Jarvin Siegers and I'm a software
+                        <h1 class="font-bold font-sans dark:text-slate-300">Software Developer</h1>
+                        <p class="text-gray-900 font-sans dark:text-slate-100">My name is Jarvin Siegers and I'm a software
                             development student.</p>
                         <ul class="flex flex-row">
                             <li><img class="w-10" src="/languages/HTML.svg" /></li>
@@ -23,9 +23,6 @@
         </div>
     </section>
 </template>
-
-<script>
-</script>
 
 <style>
 /* .content {
