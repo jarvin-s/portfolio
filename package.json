@@ -11,9 +11,7 @@
   "dependencies": {
     "@vueuse/core": "^10.1.2",
     "vue": "^3.2.47",
-    "vue-router": "^4.1.6",
-    "vuetify": "^3.3.2",
-    "webpack-plugin-vuetify": "^2.0.1"
+    "vue-router": "^4.1.6"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.1.0",
