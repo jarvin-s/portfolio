@@ -61,12 +61,12 @@
 }
 
 /* Hero stuff */
-.hero {
+/* .hero {
   display: flex;
   flex-direction: row;
   position: relative;
   width: 100%;
-}
+} */
 
 h1 {
   font-size: 3.2em;

@@ -20,13 +20,15 @@
                 </div>
             </div>
         </div> -->
-        <div class="card card-compact w-96 bg-base-100 shadow-xl">
-            <figure><img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
-            <div v-for="repo in repos" :key="repo.id" class="card-body">
-                <h2 class="card-title">{{ repo.name }}</h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
-                <div class="card-actions justify-end">
-                    <button class="btn btn-primary">Buy Now</button>
+        <div class="flex flex-wrap px-3 py-3 space-x-4 sm:flex-row sm:px-3 sm:py-3 sm:space-x-4">
+            <div v-for="repo in repos" :key="repo.id" class="card card-normal w-96 dark:bg-base-100 shadow-xl">
+                <figure><img class="max-w-full" :src="`/my-projects/${repo.name}.png`"/></figure>
+                <div class="card-body">
+                    <h2 class="card-title">{{ repo.name }}</h2>
+                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                    <div class="card-actions justify-end">
+                        <button class="btn glass">Code</button>
+                    </div>
                 </div>
             </div>
         </div>
