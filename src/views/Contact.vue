@@ -1,6 +1,11 @@
 <template>
-    <h1 class="text-3xl font-bold">Contact</h1>
+    <dialog></dialog>
 </template>
 
-<script setup>
+<script>
+
 </script>
+
+<style>
+
+</style>
