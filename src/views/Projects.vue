@@ -20,31 +20,16 @@
                 </div>
             </div>
         </div> -->
-        <v-card v-for="repo in repos" :key="repo.id" class="mx-auto flex flex-col sm:flex-row dark:bg-neutral-500" max-width="400">
-            <v-img v-if="repo.name === repo.name" class="align-end text-white" height="200" :src="`/my-projects/${repo.name}.png`" cover>
-                <v-card-title>{{ repo.name }}</v-card-title>
-            </v-img>
-
-            <v-card-subtitle class="pt-4">
-                Number 10
-            </v-card-subtitle>
-
-            <v-card-text>
-                <div>Whitehaven Beach</div>
-
-                <div>Whitsunday Island, Whitsunday Islands</div>
-            </v-card-text>
-
-            <v-card-actions>
-                <v-btn color="orange">
-                    Share
-                </v-btn>
-
-                <v-btn color="orange">
-                    Explore
-                </v-btn>
-            </v-card-actions>
-        </v-card>
+        <div class="card card-compact w-96 bg-base-100 shadow-xl">
+            <figure><img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+            <div v-for="repo in repos" :key="repo.id" class="card-body">
+                <h2 class="card-title">{{ repo.name }}</h2>
+                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <div class="card-actions justify-end">
+                    <button class="btn btn-primary">Buy Now</button>
+                </div>
+            </div>
+        </div>
     </section>
 </template>
 
