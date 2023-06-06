@@ -1,5 +1,5 @@
 <template>
-    <section id="home" class="hero dark:bg-slate-900">
+    <section id="home" class="hero bg-slate-100 dark:bg-slate-900">
         <div class="container mt-10 py-6 justify-center">
             <div class="content flex justify-center items-center gap-x-12 flex-col md:flex-row">
                 <div class="hero-main flex justify-center items-center gap-10 flex-col md:flex-row relative">

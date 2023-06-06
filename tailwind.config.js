@@ -7,7 +7,7 @@ export default {
   ],
   theme: {
     fontFamily: {
-      'sans': ['Poppins']
+      'sans': ['Poppins', 'Kanit']
     },
     extend: {},
   },
