@@ -1,37 +1,35 @@
 <template>
-    <section id="projects" class="hero">
-        <!-- <div class="container mt-10 py-6 justify-center">
-            <div class="content flex justify-center flex-col">
-                <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
-                    <div v-for="repo in repos" :key="repo.id" class="rounded bg-white overflow-hidden shadow-lg">
-                        <img class="w-full" v-if="repo.name === repo.name" :src="`/my-projects/${repo.name}.png`" />
-                        <div class="px-3 py-4">
-                            <div class="font-bold text-xl mb-2 text-black">{{ repo.name }}</div>
-                            <p class="text-gray-700 text-base">
-                                {{ repo.description }}
-                            </p>
-                        </div>
-                        <div class="px-6 pt-4 pb-2">
-                            <img class="w-10 " v-if="repo.language === repo.language"
-                                :src="`/languages/${repo.language}.svg`" :alt="`${repo.language} SVG`" />
-                            <img class="w-10" v-if="repo.language === 'C#'" src="/languages/Csharp.svg" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <div class="flex flex-wrap px-3 py-3 space-x-4 sm:flex-row sm:px-3 sm:py-3 sm:space-x-4">
+    <section id="projects" class="hero bg-zinc-100 dark:bg-slate-950">
+        <div class="flex flex-wrap px-3 py-3 space-x-4 space-y-4 sm:flex-row transition ease-in-out delay-400 sm:translate-y-1 sm:px-3 sm:py-3 sm:space-x-4">
             <div v-for="repo in repos" :key="repo.id" class="card card-normal w-96 dark:bg-base-100 shadow-xl">
-                <figure><img class="max-w-full" :src="`/my-projects/${repo.name}.png`"/></figure>
+                <figure><img class="max-w-full" v-if="repo.name === repo.name" :src="`/my-projects/${repo.name}.png`" />
+                </figure>
                 <div class="card-body">
-                    <h2 class="card-title">{{ repo.name }}</h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                    <h2 class="card-title font-bold text-slate-950 dark:text-zinc-50">{{ repo.name }}</h2>
+                    <p class="text-slate-950 dark:text-zinc-50">If a dog chews shoes whose shoes does he choose?</p>
                     <div class="card-actions justify-end">
                         <button class="btn glass">Code</button>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+                <img class="rounded-t-lg" />
+            </a>
+            <div v-for="repo in repos" :key="repo.id" class="p-5">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{ repo.name }}</h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{{ repo.description }}</p>
+                <a
+                    class="inline-flex items-center px-3 py-2 text-sm font-medium bg-neutral-700 rounded-lg hover:bg-neutral-800 dark:bg-blue-600 dark:hover:bg-blue-700">
+                    <img class="w-7" :src="getImageSrc(repo.language)" />
+                </a>
+            </div>
+        </div> -->
+
     </section>
 </template>
 
@@ -56,6 +54,22 @@ export default {
     methods: {
         filteredRepos(repos) {
             return repos.filter(repo => !["meepspeak", "plugin-hub"].includes(repo.name));
+        },
+        getImageSrc(language) {
+            if (language === 'C#') {
+                return '/languages/Csharp.svg';
+            } else {
+                return `/languages/${language}.svg`;
+            }
+        },
+        getFirstImageSrc(name) {
+            let repo;
+            for (let i = 0; i < this.repos.length; i++) {
+                repo = this.repos[i];
+            }
+            if (repo.name === repo.name) {
+                return `/my-projects/${repo.name}.png`;
+            }
         }
     }
 
