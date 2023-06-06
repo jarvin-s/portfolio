@@ -19,15 +19,15 @@
             <ul :class="showMenu ? 'flex' : 'hidden'"
                 class="flex-col mt-8 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-1 md:mt-0">
 
-                <li class="px-3 py-2 rounded-lg text-black dark:text-white hover:bg-gray-300">
+                <li class="px-3 py-2 rounded-lg text-black dark:text-white hover:bg-gray-300 dark:hover:bg-zinc-500">
                     <RouterLink :to="'/'"> Home </RouterLink>
                 </li>
 
-                <li class="px-3 py-2 rounded-lg text-black dark:text-white hover:bg-gray-300">
+                <li class="px-3 py-2 rounded-lg text-black dark:text-white hover:bg-gray-300 dark:hover:bg-zinc-500">
                     <RouterLink :to="'/projects'"> Projects </RouterLink>
                 </li>
 
-                <li class="px-3 py-2 rounded-lg text-black dark:text-white hover:bg-gray-300">
+                <li class="px-3 py-2 rounded-lg text-black dark:text-white hover:bg-gray-300 dark:hover:bg-zinc-500">
                     <RouterLink :to="'/contact'"> Contact </RouterLink>
                 </li>
 
