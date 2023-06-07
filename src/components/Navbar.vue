@@ -17,7 +17,7 @@
             </div>
 
             <ul :class="showMenu ? 'flex' : 'hidden'"
-                class="flex-col mt-8 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-1 md:mt-0">
+                class="flex-col mt-8 md:flex items-center md:space-y-0 md:flex-row md:space-x-2 md:mt-0">
 
                 <li class="px-3 py-2 rounded-lg text-black dark:text-white hover:bg-gray-300 dark:hover:bg-zinc-500">
                     <RouterLink :to="'/'"> Home </RouterLink>
