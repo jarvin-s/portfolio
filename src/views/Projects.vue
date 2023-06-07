@@ -1,6 +1,6 @@
 <template>
-    <section id="projects" class="hero bg-zinc-100 dark:bg-slate-950">
-        <div class="flex flex-wrap px-3 py-3 space-x-4 space-y-4 sm:flex-row transition ease-in-out delay-400 sm:translate-y-1 sm:px-3 sm:py-3 sm:space-x-4">
+    <section id="projects" class="hero bg-zinc-100 dark:bg-zinc-800">
+        <div class="flex flex-wrap z-1 px-3 py-3 space-x-4 space-y-4 sm:flex-row transition ease-in-out delay-400 sm:translate-y-1 sm:px-3 sm:py-3 sm:space-x-4">
             <div v-for="repo in repos" :key="repo.id" class="card card-normal w-96 dark:bg-base-100 shadow-xl">
                 <figure><img class="max-w-full" v-if="repo.name === repo.name" :src="`/my-projects/${repo.name}.png`" />
                 </figure>
