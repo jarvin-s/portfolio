@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:wght@500&family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  font-family: 'Kanit', sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -13,12 +12,11 @@
   /* color: rgba(255, 255, 255, 0.87); */
   /* background-color: #696969; */
   /* background-color: #d5d5d5; */
- 
+
   /* Light mode text color */
   /* background: rgb(114, 9, 11);
   background: linear-gradient(240deg, rgba(114, 9, 11, 0.20780812324929976) 0%, rgba(114, 9, 11, 0.6167717086834734) 22%, rgba(177, 177, 177, 1) 84%, rgba(214, 214, 214, 1) 96%); */
 
-  font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -110,7 +108,7 @@ li:hover {
 
 /* Active hover navbar */
 a.router-link-exact-active {
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 .nav-container {
