@@ -1,12 +1,12 @@
 <template>
-    <div class="bg-stone-50 dark:bg-zinc-900 top-0">
+    <div class="bg-stone-50 dark:bg-zinc-900 sticky top-0 z-10">
         <nav class="nav-container px-6 py-8 mx-auto md:flex md:justify-between md:items-center">
             <div class="flex items-center justify-between">
                 <RouterLink to="/" class="text-xl  md:text-2xl">
                     <h3 class="text-black font-bold dark:text-white">jarvin.dev</h3>
                 </RouterLink>
                 <div @click="showMenu = !showMenu" class="flex md:hidden">
-                    <button type="button" class="text-gray-800 hover:text-gray-400 focus:outline-none focus:text-gray-400">
+                    <button type="button" class="text-gray-800 hover:text-gray-400 hover:border-black dark:hover:border-white focus:outline-none dark:text-white dark:hover:text-slate-400 focus:text-gray-400">
                         <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current">
                             <path fill-rule="evenodd"
                                 d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z">
@@ -31,7 +31,7 @@
                     <RouterLink :to="'/contact'"> Contact </RouterLink>
                 </li>
 
-                <div class="flex justify-between items-center hidden sm:block">
+                <div class="flex justify-between items-center">
                     <DarkModeToggle />
                 </div>
             </ul>

@@ -1,15 +1,20 @@
 <template>
-    <section id="home" class="hero">
+    <section id="home" class="hero flex flex-row relative w-[100]% bg-white dark:bg-zinc-800">
         <div class="container mt-10 py-6 justify-center">
             <div class="content flex justify-center items-center gap-x-12 flex-col md:flex-row">
                 <div class="hero-main flex justify-center items-center gap-10 flex-col md:flex-row relative">
-                    <div class="hero-img"></div>
-                    <div class="hero-text">
+                    <div class="hero-img relative z-0  border-4 border-black dark:border-white bg-cover">
+                        <div class="absolute z-10 w-[90%] h-[35%] top-0 gradient-1"></div>
+                        <div class="absolute z-10 w-[80%] h-[80%] rounded-full bottom-40 gradient-2"></div>
+                        <p class="absolute mt-6 ml-4 z-20">test</p>
+                        <div class="absolute z-10 w-[80%] h-[50%] right-20 bottom-20 gradient-3"></div>
+                    </div>
+                    <div class="hero-text flex-col md:flex-row">
                         <h1 class="font-bold font-sans dark:text-slate-300"><span
-                                class="container text-transparent flex flex-row sm:flex-col bg-clip-text bg-gradient-to-r from-blue-700 to-rose-400">Jarvin
+                                class="container text-transparent flex flex-row sm:flex-col bg-clip-text bg-gradient-to-r from-blue-600 to-pink-500">Jarvin
                                 Siegers</span></h1>
-                        <h1 class="font-bold font-sans dark:text-white">Software Developer</h1>
-                        <p class="text-xl font-sans dark:text-white">I'm a software development student based in
+                        <h1 class="font-bold text-3xl font-sans dark:text-white">Software Developer</h1>
+                        <p class="text-xl font-sans text-black dark:text-white">I'm a software development student based in
                             <span class="country-span font-bold">The Netherlands.</span>
                         </p>
                         <div class="flex flex-row overflow-hidden items-center mt-6">
@@ -50,9 +55,7 @@
     height: 20rem;
     background-position: 50%;
     background-image: url("/hero-pfp.png");
-    background-size: cover;
-    border: 3px solid #0f0f0f;
-    position: relative;
+    max-width: 300px;
 }
 
 .hero-text {
@@ -145,5 +148,20 @@
     to {
         right: 0%;
     }
+}
+
+.gradient-1 {
+    background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #046cce 100%);
+    filter: blur(123px);
+}
+
+.gradient-2 {
+    background: linear-gradient(90deg, #500b88 0%, #580970 100%);
+    filter: blur(500px);
+}
+
+.gradient-3 {
+    background: rgba(149, 62, 231, 0.6);
+    filter: blur(400px);
 }
 </style>
