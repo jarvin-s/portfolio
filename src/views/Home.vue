@@ -119,12 +119,6 @@
     width: 6%;
 }
 
-@media screen and (max-width: 768px) {
-    .scroll-element img {
-        width: 20%;
-    }
-}
-
 .primary {
     animation: primary 12s linear infinite;
 }
