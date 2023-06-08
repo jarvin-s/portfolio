@@ -5,11 +5,14 @@
       <component :is="Component" :key="route.path" />
     </Transition>
   </RouterView>
+  
+  <Footer />
 </template>
 
 <script setup>
 import { RouterView } from 'vue-router'
 import Navbar from '@/components/Navbar.vue'
+import Footer from '@/views/Footer.vue'
 </script>
 
 <style>
