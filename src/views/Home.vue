@@ -11,7 +11,7 @@
                     </div>
                     <div class="hero-text flex-col md:flex-row">
                         <h1 class="font-bold font-sans dark:text-slate-300"><span
-                                class="container text-transparent flex flex-row sm:flex-col bg-clip-text bg-gradient-to-r from-blue-600 to-pink-500">Jarvin
+                                class="container text-transparent flex flex-row sm:flex-col bg-clip-text bg-gradient-to-br from-blue-600 to-pink-500">Jarvin
                                 Siegers</span></h1>
                         <h1 class="font-bold text-3xl font-sans dark:text-white">Software Developer</h1>
                         <p class="text-xl font-sans text-black dark:text-white">I'm a software development student based in
