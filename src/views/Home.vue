@@ -14,7 +14,7 @@
                                 class="container text-transparent flex flex-row sm:flex-col bg-clip-text bg-gradient-to-br from-blue-600 to-pink-500">Jarvin
                                 Siegers</span></h1>
                         <h1 class="font-bold text-3xl font-sans dark:text-white">Software Developer</h1>
-                        <p class="text-xl font-sans text-black dark:text-white">I'm a software development student based in
+                        <p class="text-xl font-sans text-black dark:text-white">I'm a software development student from
                             <span class="country-span font-bold">The Netherlands.</span>
                         </p>
                         <div class="flex flex-row overflow-hidden items-center mt-6">
