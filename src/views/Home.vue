@@ -6,7 +6,7 @@
                     <div class="hero-img relative z-1 border-4 border-black dark:border-white bg-cover">
                         <div class="absolute z-0 w-[90%] h-[35%] top-0 gradient-1"></div>
                         <div class="absolute z-0 w-[80%] h-[80%] rounded-full bottom-40 gradient-2"></div>
-                        <p class="absolute mt-6 ml-4 z-20">test</p>
+                        <!-- <p class="absolute mt-6 ml-4 z-20">test</p> -->
                         <div class="absolute z-0 w-[80%] h-[50%] right-20 bottom-20 gradient-3"></div>
                     </div>
                     <div class="hero-text flex-col md:flex-row">
@@ -15,7 +15,7 @@
                                 Siegers</span></h1>
                         <h1 class="font-bold text-3xl font-sans dark:text-white">Software Developer</h1>
                         <p class="text-xl font-sans text-black dark:text-white">I'm a software development student from
-                            <span class="country-span font-bold">The Netherlands.</span>
+                            <span class="country-span font-bold">The Netherlands</span>.
                         </p>
                         <div class="flex flex-row overflow-hidden items-center mt-6">
                             <div class="scroll-parent">
@@ -149,6 +149,7 @@
     }
 }
 
+/* Gradients */
 .gradient-1 {
     background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #046cce 100%);
     filter: blur(123px);
