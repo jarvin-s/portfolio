@@ -1,12 +1,11 @@
 <template>
-    <section id="home" class="hero flex flex-row relative w-[100]% bg-white dark:bg-zinc-800">
+    <section id="home" class="hero flex flex-row relative bg-white dark:bg-zinc-800">
         <div class="container mt-10 py-6 justify-center">
             <div class="content flex justify-center items-center gap-x-12 flex-col md:flex-row">
                 <div class="hero-main flex justify-center items-center gap-10 flex-col md:flex-row relative">
                     <div class="hero-img relative z-1 border-4 border-black dark:border-white bg-cover">
                         <div class="absolute z-0 w-[90%] h-[35%] top-0 gradient-1"></div>
                         <div class="absolute z-0 w-[80%] h-[80%] rounded-full bottom-40 gradient-2"></div>
-                        <!-- <p class="absolute mt-6 ml-4 z-20">test</p> -->
                         <div class="absolute z-0 w-[80%] h-[50%] right-20 bottom-20 gradient-3"></div>
                     </div>
                     <div class="hero-text flex-col md:flex-row">
@@ -46,7 +45,7 @@
     </section>
 </template>
 
-<style>
+<style scoped>
 .hero-img {
     -webkit-animation: morph 6s ease-in-out infinite;
     animation: morph 6s ease-in-out infinite;
@@ -54,7 +53,7 @@
     width: 20rem;
     height: 20rem;
     background-position: 50%;
-    background-image: url("/hero-pfp.png");
+    background-image: url("/.png");
     max-width: 300px;
 }
 
