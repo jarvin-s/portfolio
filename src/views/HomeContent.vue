@@ -12,7 +12,7 @@
                         <h1 class="font-bold font-sans dark:text-slate-300 text-center"><span
                                 class="container text-transparent flex flex-col md:flex-row text-center md:text-left bg-clip-text bg-gradient-to-br from-blue-600 to-pink-500">Jarvin
                                 Siegers</span></h1>
-                        <h1 class="font-bold text-3xl font-sans text-center sm:text-left dark:text-white">Software Developer
+                        <h1 class="font-bold text-3xl font-sans text-center md:text-left dark:text-white">Software Developer
                         </h1>
                         <p class="text-xl font-sans text-black dark:text-white sm:text-left text-center">I'm a software
                             development student from
