@@ -1,9 +1,13 @@
 <template>
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="content">
-                <h1 class="text-3xl font-bold">About</h1>
-            </div>
+    <section class="contact bg-white dark:bg-zinc-900">
+        <div class="hero-main pb-80">
+            <h1 class="font-bold flex flex-col text-4xl sm:flex-row">dfgkjldsfjlkgdgfh</h1>
         </div>
     </section>
 </template>
+
+<script>
+
+</script>
+
+<style></style>

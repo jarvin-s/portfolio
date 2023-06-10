@@ -1,12 +1,9 @@
 <template>
-    <section class="contact">
-        <form>
-            <input type="email" class="form-input px-4 py-3 rounded-full">
-        </form>
+    <section class="contact bg-white dark:bg-zinc-800">
+        <div>
+            <h1 class="font-bold text-4xl">dfgkjldsfjlkgdgfh</h1>
+        </div>
     </section>
-    <div class="mb-auto">
-
-    </div>
 </template>
 
 <script>
