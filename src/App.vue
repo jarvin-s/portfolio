@@ -5,8 +5,7 @@
       <component :is="Component" :key="route.path" />
     </Transition>
   </RouterView>
-  
-  <Footer />
+  <Footer/>
 </template>
 
 <script setup>
