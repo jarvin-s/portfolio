@@ -1,9 +1,7 @@
 <template>
   <Navbar />
   <RouterView v-slot="{ Component }">
-    <Transition 
-      enter-active-class="animate__animated animate__fadeInLeft"
-      leave-active-class="animate__animated animate__fadeInRight" mode="out-in">
+    <Transition mode="out-in">
       <component :is="Component" />
     </Transition>
   </RouterView>
