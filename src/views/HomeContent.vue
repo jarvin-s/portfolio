@@ -1,5 +1,5 @@
 <template>
-    <div class="target" v-motion-fade>
+    <div class="target" ref="targetEl">
         <section id="home" class="hero flex flex-row relative bg-zinc-100 dark:bg-zinc-800">
             <div class="container py-6 justify-center">
                 <div class="content flex justify-center items-center gap-x-12 ">
@@ -50,7 +50,12 @@
     </div>
 </template>
 
-<script>
+<script setup>
+import { useMotion } from '@vueuse/motion'
+import { ref } from 'vue'
+const targetEl = ref()
+
+
 </script>
 
 <style scoped>
