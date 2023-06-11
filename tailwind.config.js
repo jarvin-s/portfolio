@@ -9,7 +9,11 @@ export default {
     fontFamily: {
       'sans': ['Poppins', 'Kanit']
     },
-    extend: {},
+    extend: {
+      padding: {
+        '500px': '500px',
+      }
+    },
   },
   plugins: [require("daisyui"), require("@tailwindcss/forms")
   ],
