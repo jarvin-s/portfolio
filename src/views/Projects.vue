@@ -31,7 +31,7 @@
         </div>
     </section> -->
     <div class="target" v-motion-slide-visible-once-right>
-        <section class="bg-gray-100 dark:bg-gray-900 px-12">
+        <section class="bg-gray-100 dark:bg-zinc-800 px-12">
             <!-- Card Grid -->
             <div class="grid grid-flow gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                 <!-- Card Item -->
