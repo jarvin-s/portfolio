@@ -1,6 +1,6 @@
 <template>
     <div>
-        <HomeContent id="home"/>
+        <Hero id="home"/>
         <About id="about"/>
         <Projects id="projects"/>
         <Contact id="contact"/>
@@ -8,14 +8,14 @@
 </template>
 
 <script>
-import HomeContent from '@/views/HomeContent.vue'
+import Hero from '@/views/Hero.vue'
 import About from '@/views/About.vue'
 import Projects from '@/views/Projects.vue'
 import Contact from'@/views/Contact.vue'
 
 export default {
     components: {
-        HomeContent,
+        Hero,
         About,
         Projects,
         Contact
