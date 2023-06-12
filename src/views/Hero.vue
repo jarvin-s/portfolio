@@ -1,5 +1,5 @@
 <template>
-    <div class="target" ref="targetEl">
+    <div class="target" ref="targetEl" v-motion-roll-bottom>
         <section id="home" class="hero flex flex-row relative bg-zinc-100 dark:bg-zinc-800">
             <div class="container py-6 justify-center">
                 <div class="content flex justify-center items-center gap-x-12 ">
@@ -55,7 +55,13 @@ import { useMotion } from '@vueuse/motion'
 import { ref } from 'vue'
 const targetEl = ref()
 
-
+useMotion (targetEl, {
+    enter: {
+        transition: {
+            duration: 20000,
+        }
+    }
+})
 </script>
 
 <style scoped>
