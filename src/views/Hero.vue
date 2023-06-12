@@ -12,7 +12,7 @@
                         <div class="hero-text flex-col md:flex-row text-center md:text-left">
                             <h1 class="font-bold font-sans dark:text-slate-300 text-center"><span
                                     class="container text-transparent flex flex-col md:flex-row text-center md:text-left bg-clip-text bg-gradient-to-br from-blue-600 to-pink-500">Jarvin
-                                    Siegers</span></h1>
+                                    Siegers <Icon icon="twemoji:waving-hand"/></span></h1>
                             <h1 class="font-bold text-3xl font-sans text-center md:text-left dark:text-white">Software
                                 Developer
                             </h1>
@@ -52,6 +52,7 @@
 
 <script setup>
 import { useMotion } from '@vueuse/motion'
+import { Icon } from '@iconify/vue'
 import { ref } from 'vue'
 const targetEl = ref()
 
