@@ -147,6 +147,7 @@
 
 <script>
 import { useMotion } from '@vueuse/motion'
+import { Icon } from '@iconify/vue'
 import { ref } from 'vue'
 const targetEl = ref()
 
