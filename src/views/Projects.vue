@@ -1,40 +1,9 @@
 <template>
-    <!-- <section id="projects" class="hero bg-zinc-100 dark:bg-zinc-800"> -->
-    <!-- <div
-            class="flex flex-col pb-80 z-1 px-3 py-3 space-x-4 space-y-4 sm:flex-row transition ease-in-out delay-400 sm:translate-y-1 sm:px-3 sm:py-3 sm:space-x-4">
-            <div class="card ml-4 mt-4 card-normal w-96 dark:bg-base-100 shadow-xl">
-                <figure><img class="max-w-full" v-if="repo.name === repo.name" :src="`/my-projects/${repo.name}.png`" />
-                </figure>
-                <div class="card-body">
-                    <h2 class="card-title font-bold text-slate-950 dark:text-zinc-50">{{ repo.name }}</h2>
-                    <p class="text-slate-950 dark:text-zinc-50">If a dog chews shoes whose shoes does he choose?</p>
-                    <div class="card-actions justify-end">
-                        <button class="btn glass">Code</button>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-    <!-- <div v-for="repo in repos" :key="repo.id" class="main">
-            <h1>Responsive Card Grid Layout</h1>
-            <ul class="cards">
-                <li class="cards_item">
-                    <div class="card">
-                        <div class="card_image"><img src="https://picsum.photos/500/300/?image=10"></div>
-                        <div class="card_content">
-                            <h2 class="card_title">{{ repo.name }}</h2>
-                            <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-                            <button class="btn card_btn">Read More</button>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </section> -->
     <div class="target" v-motion-slide-visible-once-right>
         <section class="bg-gray-100 dark:bg-zinc-800 px-12">
             <div class="grid grid-flow gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                 <div v-for="repo in repos" :key="repo.id"
-                    class="my-8 rounded shadow-lg shadow-gray-200 dark:shadow-gray-900 bg-white dark:bg-gray-800 duration-300">
+                    class="my-8 bg-white dark:bg-gray-800 duration-300">
                     <a _href="link" class="cursor-pointer">
                         <figure>
                             <img v-if="repo.name === repo.name" :src="`/my-projects/${repo.name}.png`"
@@ -44,11 +13,11 @@
                     <p class="text-lg ml-4 mt-4 h-8 mb-4 font-bold leading-relaxed text-gray-800 dark:text-gray-300">
                         {{ repo.name }}
                     </p>
-                    <div class="flex flex-col sm:flex-row">
+                    <div class="flex flex-row justify-end">
+                        <a class="flex space-x-0.5 mb-1 mr-1 text-black dark:text-white dark:hover:text-slate-300 hover:text-slate-500 hover:underline duration-300" target="_blank" :href="`${repo.html_url}`">
                             <p>Code</p>
-                            <a target="_blank" :href="`${repo.html_url}`">
-                                <Icon icon="mdi:github"  width="28" :inline="true" />
-                            </a>
+                            <Icon icon="mdi:github" width="28" />
+                        </a>
                     </div>
                 </div>
             </div>
