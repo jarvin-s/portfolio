@@ -4,12 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 :root {
   line-height: 1.5;
   font-weight: 400;
@@ -42,19 +36,12 @@
 
 *::-webkit-scrollbar-track {
   border-radius: 5px;
-}
-
-*::-webkit-scrollbar-track:hover {
-  background-color: #B8C0C2;
-}
-
-*::-webkit-scrollbar-track:active {
-  background-color: #B8C0C2;
+  background-color: #201E1B;
 }
 
 *::-webkit-scrollbar-thumb {
   border-radius: 5px;
-  background-color: #3d3d3d;
+  background-color: #36332E;
 }
 
 *::-webkit-scrollbar-thumb:hover {
@@ -62,7 +49,7 @@
 }
 
 *::-webkit-scrollbar-thumb:active {
-  background-color: #3d3d3d;
+  background-color: #6e6e6e;
 }
 
 /* Hero stuff */
@@ -96,10 +83,6 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-.card {
-  padding: 2em;
-}
-
 /* svg:hover {
   fill: rgb(80, 79, 79);
 } */
@@ -108,16 +91,13 @@ li:hover {
   transition: 300ms;
 }
 
-/* Active hover navbar */
-a.router-link-exact-active {
-  font-weight: bolder;
-}
+
 
 .nav-container {
   max-width: 90%;
 }
 
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #ffffff;
@@ -126,4 +106,4 @@ a.router-link-exact-active {
   button {
     background-color: #f9f9f9;
   }
-}
+} */

@@ -1,40 +1,38 @@
 <template>
-    <section id="projects" class="hero bg-zinc-100 dark:bg-zinc-800">
-        <div class="flex flex-wrap z-1 px-3 py-3 space-x-4 space-y-4 sm:flex-row transition ease-in-out delay-400 sm:translate-y-1 sm:px-3 sm:py-3 sm:space-x-4">
-            <div v-for="repo in repos" :key="repo.id" class="card card-normal w-96 dark:bg-base-100 shadow-xl">
-                <figure><img class="max-w-full" v-if="repo.name === repo.name" :src="`/my-projects/${repo.name}.png`" />
-                </figure>
-                <div class="card-body">
-                    <h2 class="card-title font-bold text-slate-950 dark:text-zinc-50">{{ repo.name }}</h2>
-                    <p class="text-slate-950 dark:text-zinc-50">If a dog chews shoes whose shoes does he choose?</p>
-                    <div class="card-actions justify-end">
-                        <button class="btn glass">Code</button>
+    <div class="target" v-motion-slide-visible-once-right>
+        <section class="bg-gray-100 dark:bg-zinc-800 px-12">
+            <div class="grid grid-flow gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                <div v-for="repo in repos" :key="repo.id"
+                    class="card my-8 bg-white border-4 rounded-lg border-stone-900 hover:border-pink-800 bg-gradient-to-br from-blue-600 to-red-600 dark:bg-gray-800 duration-300">
+                    <a _href="link" class="cursor-pointer">
+                        <figure>
+                            <img v-if="repo.name === repo.name" :src="`/my-projects/${repo.name}.png`"
+                                class="rounded-t h-72 w-full object-cover" />
+                        </figure>
+                    </a>
+                    <p class="text-lg ml-4 mt-4 h-8 mb-4 font-bold leading-relaxed text-white">
+                        {{ repo.name }}
+                    </p>
+                    <div class="flex flex-row justify-end">
+                        <a class="flex space-x-0.5 mb-1 mr-1 text-white dark:hover:text-slate-300 hover:text-slate-500 hover:underline duration-300"
+                            target="_blank" :href="`${repo.html_url}`">
+                            <p>Code</p>
+                            <Icon icon="mdi:github" width="28" />
+                        </a>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <!-- <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-            <a href="#">
-                <img class="rounded-t-lg" />
-            </a>
-            <div v-for="repo in repos" :key="repo.id" class="p-5">
-                <a href="#">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{ repo.name }}</h5>
-                </a>
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{{ repo.description }}</p>
-                <a
-                    class="inline-flex items-center px-3 py-2 text-sm font-medium bg-neutral-700 rounded-lg hover:bg-neutral-800 dark:bg-blue-600 dark:hover:bg-blue-700">
-                    <img class="w-7" :src="getImageSrc(repo.language)" />
-                </a>
-            </div>
-        </div> -->
-
-    </section>
+        </section>
+    </div>
 </template>
 
 <script>
+import { Icon } from '@iconify/vue';
+
 export default {
+    components: {
+        Icon,
+    },
     data() {
         return {
             repos: [],
@@ -75,3 +73,35 @@ export default {
 
 }
 </script>
+
+<style scoped>
+h1 {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.btn {
+    color: #ffffff;
+    padding: 0.8rem;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    font-weight: 400;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: transparent;
+}
+
+.btn:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+
+.card {
+    background: rgb(36, 35, 141);
+    background: radial-gradient(circle, rgba(36, 35, 141, 1) 0%, rgba(17, 26, 68, 1) 52%);
+}
+</style>

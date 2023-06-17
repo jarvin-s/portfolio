@@ -9,9 +9,27 @@ export default {
     fontFamily: {
       'sans': ['Poppins', 'Kanit']
     },
-    extend: {},
-  },
-  plugins: [require("daisyui"), require("@tailwindcss/forms")
-  ],
+    extend: {
+      animation: {
+        text: 'text 4s ease-in-out infinite',
+      },
+      keyframes: {
+        text: {
+          '0%, 100%': {
+            'background-size': '200% 200%',
+            'background-position': 'left center',
+          },
+          '50%': {
+            'background-size': '200% 200%',
+            'background-position': 'right center',
+          },
+        },
+        padding: {
+          '500px': '500px',
+        }
+      },
+    },
+    plugins: [require("@tailwindcss/forms")
+    ],
+  }
 }
-
