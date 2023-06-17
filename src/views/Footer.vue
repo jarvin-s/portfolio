@@ -7,7 +7,7 @@
                 <div class="pt-4 md:p-0 text-left text-xs">
                     <div class="no-underline hover:underline ml-4 cursor-pointer">{{ privacy }}</div>
                     <div class="no-underline hover:underline ml-4 cursor-pointer">{{ tos }}</div>
-                    <div class="no-underline hover:underline ml-4 cursor-pointer">{{ contactUs }}</div>
+                    <div class="no-underline hover:underline ml-4 cursor-pointer">{{ contactMe }}</div>
                 </div>
             </div>
         </div>
@@ -21,7 +21,7 @@ export default {
             creator: "Made with 🤓 by Jarvin. All rights reserved.",
             privacy: "Privacy Policy",
             tos: "Terms & Conditions",
-            contactUs: "Contact us"
+            contactMe: "Contact me"
         }
     }
 }
