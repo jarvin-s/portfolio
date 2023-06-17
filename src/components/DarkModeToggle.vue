@@ -1,6 +1,6 @@
 <template>
     <div class="flex flex-row space-x-8">
-        <a target="_blank" href="https://github.com/jarvin-s/portfolio"
+        <a target="_blank" href="https://github.com/jarvin-s"
             className="mt-1.5 ml-6 block text-slate-400 hover:text-slate-500 dark:text-slate-200 dark:hover:text-sky-300">
             <svg class=" dark:hover:fill-zinc-300 dark:fill-white hover:fill-zinc-500" xmlns="http://www.w3.org/2000/svg"
                 width="24" height="24" viewBox="0 0 24 24">

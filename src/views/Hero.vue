@@ -1,23 +1,23 @@
 <template>
     <div class="target" ref="targetEl" v-motion-roll-bottom>
         <section id="home" class="hero flex flex-row relative bg-zinc-100 dark:bg-zinc-800">
-            <div class="container py-6 justify-center">
-                <div class="content flex justify-center items-center gap-x-12 ">
-                    <div class="hero-main flex justify-center items-center gap-10 pb-[500px] flex-col md:flex-row relative">
-                        <p class="flex">Hey! </p>
+            <div class="container py-6">
+                <div class="content flex items-center gap-x-12 ">
+                    <div class="hero-main flex items-center gap-10 pb-[500px] flex-col md:flex-row relative">
                         <div class="absolute z-0 w-[90%] h-[35%] top-0 gradient-1"></div>
                         <div class="absolute z-0 w-[80%] h-[80%] rounded-full bottom-40 gradient-2"></div>
                         <div class="absolute z-0 w-[80%] h-[50%] right-20 bottom-20 gradient-3"></div>
                         <div class="hero-text flex-col md:flex-row text-center md:text-left">
-                            <h1 class="font-bold font-sans dark:text-slate-300 text-center"><span
-                                    class="wave">👋</span><span
-                                    class="container text-transparent flex flex-col md:flex-row text-center md:text-left bg-clip-text bg-gradient-to-br from-blue-600 to-pink-500">Jarvin
+                            <h1 class="flex font-bold dark:text-slate-300 text-center">
+                                <p class="flex text-3xl">Hey!</p><span class="wave">👋</span><span class="text-5xl">My name is</span>
+                                <span
+                                    class="container text-5xl animate-text text-transparent text-center md:text-left bg-clip-text bg-gradient-to-br from-blue-600 to-pink-400">Jarvin
                                     Siegers</span>
                             </h1>
-                            <h1 class="font-bold text-3xl font-sans text-center md:text-left dark:text-white">Software
+                            <h1 class="font-bold text-3xl text-center md:text-left dark:text-white">Software
                                 Developer
                             </h1>
-                            <p class="text-xl font-sans text-black dark:text-white sm:text-left text-center">I'm a software
+                            <p class="text-xl text-black dark:text-white sm:text-left text-center">I'm a software
                                 development student from
                                 <span class="country-span font-bold text-center">The Netherlands</span>.
                             </p>
@@ -195,7 +195,7 @@ useMotion(targetEl, {
 
 }
 
-.country-span {
+.country-span:hover {
     color: #d10d16;
     background-image: -webkit-linear-gradient(270deg, #d10d16 46%, #FFFFFF 64%, #1e63c9 0%);
     background-clip: text;
