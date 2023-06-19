@@ -1,19 +1,21 @@
 <template>
     <div class="target" ref="targetEl" v-motion-roll-bottom>
         <section id="home" class="hero flex flex-row relative bg-zinc-100 dark:bg-zinc-800">
+            <!-- <div class="absolute w-full border-2 hidden md:block">
+                <svg id="visual" viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><rect x="0" y="0" width="900" height="600" fill="#001220"></rect><defs><linearGradient id="grad1_0" x1="33.3%" y1="100%" x2="100%" y2="0%"><stop offset="20%" stop-color="#001220" stop-opacity="1"></stop><stop offset="80%" stop-color="#001220" stop-opacity="1"></stop></linearGradient></defs><defs><linearGradient id="grad2_0" x1="0%" y1="100%" x2="66.7%" y2="0%"><stop offset="20%" stop-color="#001220" stop-opacity="1"></stop><stop offset="80%" stop-color="#001220" stop-opacity="1"></stop></linearGradient></defs><g transform="translate(900, 600)"><path d="M-189.3 0C-189.3 -17.9 -189.4 -35.7 -179.7 -48.1C-170 -60.6 -150.6 -67.5 -142.9 -82.5C-135.2 -97.5 -139.3 -120.4 -130.1 -130.1C-120.9 -139.8 -98.3 -136.2 -83.5 -144.6C-68.7 -153 -61.6 -173.4 -49 -182.8C-36.4 -192.3 -18.2 -190.8 0 -189.3L0 0Z" fill="#FBAE3C"></path></g><g transform="translate(0, 0)"><path d="M189.3 0C191.4 18 193.5 36.1 182.8 49C172.2 61.9 148.8 69.6 134.2 77.5C119.6 85.4 113.8 93.4 109.6 109.6C105.4 125.8 102.9 150.2 91.5 158.5C80.1 166.7 59.9 158.9 43.2 161.3C26.5 163.8 13.3 176.5 0 189.3L0 0Z" fill="#FBAE3C"></path></g></svg>                        
+            </div> -->
             <div class="container py-6">
                 <div class="content flex items-center gap-x-12 ">
-                    <div class="hero-main flex items-center gap-10 pb-[500px] flex-col md:flex-row relative">
+                    <div class="hero-main flex items-center pb-[500px] flex-col md:flex-row relative">
                         <div class="absolute z-0 w-[90%] h-[35%] top-0 gradient-1"></div>
                         <div class="absolute z-0 w-[80%] h-[80%] rounded-full bottom-40 gradient-2"></div>
                         <div class="absolute z-0 w-[80%] h-[50%] right-20 bottom-20 gradient-3"></div>
                         <div class="hero-text flex-col md:flex-row text-center md:text-left">
-                            <h1 class="flex font-bold dark:text-slate-300 text-center">
-                                <p class="flex text-3xl">Hey!</p><span class="wave">👋</span><span class="text-5xl">My name is</span>
-                                <span
-                                    class="container text-5xl animate-text text-transparent text-center md:text-left bg-clip-text bg-gradient-to-br from-blue-600 to-pink-400">Jarvin
-                                    Siegers</span>
-                            </h1>
+                            <h1 class="flex font-bold dark:text-slate-300 text-center">Hey! <span class="wave">👋</span>My
+                                name is</h1>
+                            <span
+                                class="container text-5xl animate-text text-transparent text-center md:text-left bg-clip-text bg-gradient-to-br from-blue-600 to-pink-400">Jarvin
+                                Siegers</span>
                             <h1 class="font-bold text-3xl text-center md:text-left dark:text-white">Software
                                 Developer
                             </h1>
@@ -48,6 +50,9 @@
                 </div>
             </div>
         </section>
+        <div class="card">
+        </div>
+
     </div>
 </template>
 
@@ -66,6 +71,43 @@ useMotion(targetEl, {
 </script>
 
 <style scoped>
+.card {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background-color: #f0f0f0;
+  overflow: hidden;
+}
+
+.card:before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  border-radius: 8px;
+  border: 2px solid transparent;
+  background-image: linear-gradient(to right, #ff0000, #00ff00);
+  background-clip: padding-box;
+  transition: border-color 0.3s ease-in-out;
+  z-index: -1;
+}
+
+.card:hover:before {
+  border-color: transparent;
+  animation: spin-border 2s infinite linear;
+}
+
+@keyframes spin-border {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .hero-img {
     -webkit-animation: morph 6s ease-in-out infinite;
     animation: morph 6s ease-in-out infinite;
