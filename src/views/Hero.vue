@@ -50,9 +50,6 @@
                 </div>
             </div>
         </section>
-        <div class="card">
-        </div>
-
     </div>
 </template>
 
@@ -64,50 +61,13 @@ const targetEl = ref()
 useMotion(targetEl, {
     enter: {
         transition: {
-            duration: 20000,
+            duration: 2000,
         }
     }
-})
+});
 </script>
 
 <style scoped>
-.card {
-  position: relative;
-  width: 300px;
-  height: 200px;
-  background-color: #f0f0f0;
-  overflow: hidden;
-}
-
-.card:before {
-  content: "";
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  border-radius: 8px;
-  border: 2px solid transparent;
-  background-image: linear-gradient(to right, #ff0000, #00ff00);
-  background-clip: padding-box;
-  transition: border-color 0.3s ease-in-out;
-  z-index: -1;
-}
-
-.card:hover:before {
-  border-color: transparent;
-  animation: spin-border 2s infinite linear;
-}
-
-@keyframes spin-border {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 .hero-img {
     -webkit-animation: morph 6s ease-in-out infinite;
     animation: morph 6s ease-in-out infinite;
