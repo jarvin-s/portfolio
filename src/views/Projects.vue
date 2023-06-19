@@ -78,6 +78,7 @@ export default {
     --border-size: 3px;
     --border-angle: 0turn;
     background-image: conic-gradient(from var(--border-angle), #213, #112 50%, #213), conic-gradient(from var(--border-angle), transparent 10%, #08f, #f03);
+    transition-duration: 300ms;
 }
 
 .card:hover {
