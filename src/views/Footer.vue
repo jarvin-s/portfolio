@@ -14,12 +14,12 @@
                 <div class="mt-4">{{ creator }}</div>
                 <div class="flex pt-4 md:p-0 text-left text-xs">
                     <div class="ml-4 cursor-pointer"><a
-                            class=" dark:hover:text-zinc-400 hover:text-slate-400 duration-300" target="_blank"
+                            class=" dark:hover:text-zinc-400 hover:text-slate-600 duration-300" target="_blank"
                             href="https://github.com/jarvin-s">
                             <Icon icon="mdi:github" width="28" />
                         </a></div>
                     <div class="ml-4 cursor-pointer"><a
-                            class=" dark:hover:text-zinc-400 hover:text-slate-400 duration-300" target="_blank"
+                            class=" dark:hover:text-zinc-400 hover:text-slate-600 duration-300" target="_blank"
                             href="https://www.linkedin.com/in/jarvin-siegers-65bbb11bb/">
                             <Icon icon="mdi:linkedin" width="28" />
                         </a></div>
