@@ -188,45 +188,6 @@ useMotion(targetEl, {
     filter: blur(400px);
 }
 
-#skeleton {
-    animation: fadeInUp 1s;
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20%);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-#bolt g {
-    opacity: 0;
-    animation: dropIn 4s;
-    animation-timing-function: ease;
-    animation-fill-mode: forwards;
-    animation-delay: calc(var(--order) * 200ms);
-    animation-iteration-count: infinite;
-}
-
-@keyframes dropIn {
-    20% {
-        opacity: 0;
-        transform: translateY(-20%);
-    }
-
-    30%,
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-}
-
 .wave {
     animation-name: wave-animation;
     animation-duration: 2.5s;
