@@ -3,12 +3,10 @@
         <section class="bg-gray-100 dark:bg-zinc-800 px-12">
             <div class="grid grid-flow gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                 <div v-for="repo in repos" :key="repo.id" class="card my-8 rounded-lg">
-                    <a _href="link" class="cursor-pointer">
-                        <figure class="m-1">
-                            <img v-if="repo.name === repo.name" :src="`/my-projects/${repo.name}.png`"
-                                class="rounded-t h-72 w-full object-cover"/>
-                        </figure>
-                    </a>
+                    <figure class="m-1">
+                        <img v-if="repo.name === repo.name" :src="`/my-projects/${repo.name}.png`"
+                            class="rounded-t h-72 w-full object-cover" />
+                    </figure>
                     <p class="text-lg ml-4 mt-4 h-8 mb-4 font-bold leading-relaxed text-white">
                         {{ repo.name }}
                     </p>
@@ -51,22 +49,6 @@ export default {
     methods: {
         filteredRepos(repos) {
             return repos.filter(repo => !["meepspeak", "plugin-hub"].includes(repo.name));
-        },
-        getImageSrc(language) {
-            if (language === 'C#') {
-                return '/languages/Csharp.svg';
-            } else {
-                return `/languages/${language}.svg`;
-            }
-        },
-        getFirstImageSrc(name) {
-            let repo;
-            for (let i = 0; i < this.repos.length; i++) {
-                repo = this.repos[i];
-            }
-            if (repo.name === repo.name) {
-                return `/my-projects/${repo.name}.png`;
-            }
         }
     }
 
