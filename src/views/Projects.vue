@@ -3,7 +3,7 @@
         <section class="bg-gray-100 dark:bg-zinc-800 px-12">
             <div class="grid grid-flow gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                 <div v-for="repo in repos" :key="repo.id" class="card my-8 rounded-lg">
-                    <figure class="m-1">
+                    <figure class="m-1 rounded-lg">
                         <img v-if="repo.name === repo.name" :src="`/my-projects/${repo.name}.png`"
                             class="rounded-t h-72 w-full object-cover" />
                     </figure>
@@ -60,7 +60,7 @@ export default {
     --border-size: 3px;
     --border-angle: 0turn;
     background-image: conic-gradient(from var(--border-angle), #213, #112 50%, #213), conic-gradient(from var(--border-angle), transparent 10%, #08f, #f03);
-    transition-duration: 300ms;
+    transition: 300ms;
 }
 
 .card:hover {
@@ -87,27 +87,4 @@ h1 {
     font-weight: 400;
     text-align: center;
 }
-
-.btn {
-    color: #ffffff;
-    padding: 0.8rem;
-    font-size: 14px;
-    text-transform: uppercase;
-    border-radius: 4px;
-    font-weight: 400;
-    display: block;
-    width: 100%;
-    cursor: pointer;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    background: transparent;
-}
-
-.btn:hover {
-    background-color: rgba(255, 255, 255, 0.12);
-}
-
-/* .card {
-    background: rgb(36, 35, 141);
-    background: radial-gradient(circle, rgba(36, 35, 141, 1) 0%, rgba(17, 26, 68, 1) 52%);
-} */
 </style>
