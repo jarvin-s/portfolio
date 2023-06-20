@@ -20,19 +20,19 @@
             <ul :class="showMenu ? 'flex' : 'hidden'"
                 class="flex-col mt-8 md:flex items-center md:space-y-0 md:flex-row md:space-x-2 md:mt-0">
 
-                <li class="px-3 py-2 rounded-lg text-black dark:text-white hover:bg-gray-300 dark:hover:bg-zinc-500">
+                <li class="px-3 py-2 rounded-lg text-black dark:text-white hover:bg-gray-300 dark:hover:bg-zinc-600">
                     <RouterLink class="hover:font-bold" to="#home" v-scroll-to="'#home'"> Home </RouterLink>
                 </li>
 
-                <li class="px-3 py-2 rounded-lg text-black dark:text-white hover:bg-gray-300 dark:hover:bg-zinc-500">
+                <li class="px-3 py-2 rounded-lg text-black dark:text-white hover:bg-gray-300 dark:hover:bg-zinc-600">
                     <RouterLink class="hover:font-bold" to="#about" v-scroll-to="'#about'"> About </RouterLink>
                 </li>
 
-                <li class="px-3 py-2 rounded-lg text-black dark:text-white hover:bg-gray-300 dark:hover:bg-zinc-500">
+                <li class="px-3 py-2 rounded-lg text-black dark:text-white hover:bg-gray-300 dark:hover:bg-zinc-600">
                     <RouterLink class="hover:font-bold" to="#projects" v-scroll-to="'#projects'"> Projects </RouterLink>
                 </li>
 
-                <li class="px-3 py-2 rounded-lg text-black dark:text-white hover:bg-gray-300 dark:hover:bg-zinc-500">
+                <li class="px-3 py-2 rounded-lg text-black dark:text-white hover:bg-gray-300 dark:hover:bg-zinc-600">
                     <RouterLink class="hover:font-bold" to="#contact" v-scroll-to="'#contact'"> Contact </RouterLink>
                 </li>
 
