@@ -1,11 +1,11 @@
 <template>
-    <div class="target" v-motion-slide-visible-once-left>
-        <section class="contact pt-20 pb-20">
+    <div class="target" v-motion-pop-visible-once>
+        <section class="bg-white dark:bg-zinc-900 contact pt-20 pb-20">
             <form
                 class="bg-zinc-300 space-y-8 py-8 lg:py-16 mx-auto max-w-screen-sm dark:bg-black rounded-lg shadow-lg px-8 pt-6 mb-4">
                 <div>
                     <h1 class="mb-4 text-4xl text-black text-center dark:text-white font-bold">Interested in <span
-                            class="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-500">working</span>
+                        class="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-500">working</span>
                         together?
                     </h1>
                     <h4 class="text-black flex dark:text-white text-left justify-center sm:text-center opacity-80">Don't hesitate and reach out today!
