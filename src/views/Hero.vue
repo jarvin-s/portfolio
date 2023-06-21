@@ -1,47 +1,45 @@
 <template>
     <div class="target" ref="targetEl" v-motion-roll-bottom>
-        <section id="home" class="hero flex flex-row relative bg-zinc-100 dark:bg-zinc-800">
+        <section id="home" class="hero bg-zinc-100 dark:bg-zinc-800">
             <!-- <div class="absolute w-full border-2 hidden md:block">
                 <svg id="visual" viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><rect x="0" y="0" width="900" height="600" fill="#001220"></rect><defs><linearGradient id="grad1_0" x1="33.3%" y1="100%" x2="100%" y2="0%"><stop offset="20%" stop-color="#001220" stop-opacity="1"></stop><stop offset="80%" stop-color="#001220" stop-opacity="1"></stop></linearGradient></defs><defs><linearGradient id="grad2_0" x1="0%" y1="100%" x2="66.7%" y2="0%"><stop offset="20%" stop-color="#001220" stop-opacity="1"></stop><stop offset="80%" stop-color="#001220" stop-opacity="1"></stop></linearGradient></defs><g transform="translate(900, 600)"><path d="M-189.3 0C-189.3 -17.9 -189.4 -35.7 -179.7 -48.1C-170 -60.6 -150.6 -67.5 -142.9 -82.5C-135.2 -97.5 -139.3 -120.4 -130.1 -130.1C-120.9 -139.8 -98.3 -136.2 -83.5 -144.6C-68.7 -153 -61.6 -173.4 -49 -182.8C-36.4 -192.3 -18.2 -190.8 0 -189.3L0 0Z" fill="#FBAE3C"></path></g><g transform="translate(0, 0)"><path d="M189.3 0C191.4 18 193.5 36.1 182.8 49C172.2 61.9 148.8 69.6 134.2 77.5C119.6 85.4 113.8 93.4 109.6 109.6C105.4 125.8 102.9 150.2 91.5 158.5C80.1 166.7 59.9 158.9 43.2 161.3C26.5 163.8 13.3 176.5 0 189.3L0 0Z" fill="#FBAE3C"></path></g></svg>                        
             </div> -->
-            <div class="container py-6">
-                <div class="content flex items-center gap-x-12 ">
-                    <div class="hero-main flex items-center pb-[500px] flex-col md:flex-row relative">
-                        <div class="absolute z-0 w-[90%] h-[35%] top-0 gradient-1"></div>
-                        <div class="absolute z-0 w-[80%] h-[80%] rounded-full bottom-40 gradient-2"></div>
-                        <div class="absolute z-0 w-[80%] h-[50%] right-20 bottom-20 gradient-3"></div>
-                        <div class="hero-text flex-col md:flex-row text-center md:text-left">
-                            <h1 class="flex font-bold dark:text-slate-300 text-center">Hey! <span class="wave">👋</span>My
-                                name is</h1>
-                            <span
-                                class="container text-5xl animate-text text-transparent text-center md:text-left bg-clip-text bg-gradient-to-br from-blue-600 to-pink-400">Jarvin
-                                Siegers</span>
-                            <h1 class="font-bold text-3xl text-center md:text-left dark:text-white">Software
-                                Developer
-                            </h1>
-                            <p class="text-xl text-black dark:text-white sm:text-left text-center">I'm a software
-                                development student from The Netherlands.
-                            </p>
-                            <div class="flex flex-row overflow-hidden items-center mt-6">
-                                <div class="scroll-parent">
-                                    <div class="scroll-element primary">
-                                        <img class="w-10" src="/languages/HTML.svg" />
-                                        <img class="w-10" src="/languages/CSS.svg" />
-                                        <img class="w-10" src="/languages/JavaScript.svg" />
-                                        <img class="w-10" src="/languages/Vue.svg" />
-                                        <img class="w-10" src="/languages/tailwind.svg" />
-                                        <img class="w-10" src="/languages/git.svg" />
-                                        <img class="w-10" src="/languages/mysql.svg" />
-                                    </div>
-                                    <div class="scroll-element secondary">
-                                        <img class="w-10" src="/languages/HTML.svg" />
-                                        <img class="w-10" src="/languages/CSS.svg" />
-                                        <img class="w-10" src="/languages/JavaScript.svg" />
-                                        <img class="w-10" src="/languages/Vue.svg" />
-                                        <img class="w-10" src="/languages/tailwind.svg" />
-                                        <img class="w-10" src="/languages/git.svg" />
-                                        <img class="w-10" src="/languages/mysql.svg" />
-                                    </div>
+            <div class="content py-6 items-center gap-x-12 pb-[500px]">
+                <div class="hero-main w-1/3 h-80 items-center border-2 flex-col md:flex-row relative">
+                    <div class="absolute z-0 w-[90%] h-[35%] top-0 gradient-1"></div>
+                    <div class="absolute z-0 w-[80%] h-[80%] rounded-full bottom-40 gradient-2"></div>
+                    <div class="absolute z-0 w-[80%] h-[50%] right-20 bottom-20 gradient-3"></div>
+                    <div class="hero-text md:flex-row text-center md:text-left">
+                        <h1 class="font-bold dark:text-slate-300 text-center md:text-left">Hi<span class="wave">👋</span>
+                        </h1>
+                        <h1 class="text-3xl font bold dark:text-slate-300 text-center md:text-left">My name is <span
+                                class="animate-text text-transparent text-center md:text-left bg-clip-text bg-gradient-to-br from-blue-600 to-pink-400">Jarvin
+                                Siegers</span></h1>
+                        <h1 class="font-bold text-3xl text-center md:text-left dark:text-white">Software
+                            Developer
+                        </h1>
+                        <p class="text-xl text-black dark:text-white md:text-left text-center">I'm a software
+                            development student from The Netherlands.
+                        </p>
+                        <div class="flex flex-row justify-center md:justify-start overflow-hidden items-center mt-6">
+                            <div class="scroll-parent">
+                                <div class="scroll-element primary">
+                                    <img class="w-10" src="/languages/HTML.svg" />
+                                    <img class="w-10" src="/languages/CSS.svg" />
+                                    <img class="w-10" src="/languages/JavaScript.svg" />
+                                    <img class="w-10" src="/languages/Vue.svg" />
+                                    <img class="w-10" src="/languages/tailwind.svg" />
+                                    <img class="w-10" src="/languages/git.svg" />
+                                    <img class="w-10" src="/languages/mysql.svg" />
+                                </div>
+                                <div class="scroll-element secondary">
+                                    <img class="w-10" src="/languages/HTML.svg" />
+                                    <img class="w-10" src="/languages/CSS.svg" />
+                                    <img class="w-10" src="/languages/JavaScript.svg" />
+                                    <img class="w-10" src="/languages/Vue.svg" />
+                                    <img class="w-10" src="/languages/tailwind.svg" />
+                                    <img class="w-10" src="/languages/git.svg" />
+                                    <img class="w-10" src="/languages/mysql.svg" />
                                 </div>
                             </div>
                         </div>
