@@ -20,8 +20,7 @@
                                 Developer
                             </h1>
                             <p class="text-xl text-black dark:text-white sm:text-left text-center">I'm a software
-                                development student from
-                                <span class="country-span font-bold text-center">The Netherlands</span>.
+                                development student from The Netherlands.
                             </p>
                             <div class="flex flex-row overflow-hidden items-center mt-6">
                                 <div class="scroll-parent">
@@ -101,14 +100,6 @@ useMotion(targetEl, {
         border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
     }
 
-}
-
-.country-span:hover {
-    color: #d10d16;
-    background-image: -webkit-linear-gradient(270deg, #d10d16 46%, #FFFFFF 64%, #1e63c9 0%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 /* Infinite scroll animation */
