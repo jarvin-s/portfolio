@@ -11,13 +11,19 @@
                         {{ repo.name }}
                     </p>
                     <p v-if="repo.name === repo.name" class="ml-4">{{ repo.description }}</p>
-                    <div class="flex flex-row justify-end">
-                        <p></p>
-                        <a class="flex space-x-0.5 mb-1 mr-1 text-white dark:hover:text-slate-300 hover:text-slate-500 hover:underline duration-300"
-                            target="_blank" :href="`${repo.html_url}`">
-                            <p>Code</p>
-                            <Icon icon="mdi:github" width="28" />
-                        </a>
+                    <div class="flex flex-col sm:flex-row justify-end mr-2 space-x-2 mb-2">
+                        <button
+                            class="btn-send-light dark:btn-send-dark flex dark:text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline"
+                            type="button">
+                            Live demo
+                            <Icon class="ml-1 " icon="clarity:pop-out-line" width="24" />
+                        </button>
+                        <button
+                            class="btn-send-light dark:btn-send-dark flex dark:text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline"
+                            type="button">
+                            Code
+                            <Icon class="ml-1 " icon="mdi:github" width="24" />
+                        </button>
                     </div>
                 </div>
             </div>
@@ -63,10 +69,10 @@ export default {
 
 <style scoped>
 .card {
-    --border-size: 1.8px;
+    --border-size: 3px;
     --border-angle: 0turn;
     border-radius: 0.2rem;
-    background-image: conic-gradient(from var(--border-angle), #213, #112 50%, #213), conic-gradient(from var(--border-angle), transparent 10%, #08f, #f03);
+    background-image: conic-gradient(from var(--border-angle), #213, #112 50%, #213), conic-gradient(from var(--border-angle), transparent 10%, rgb(234, 0, 255), #f03);
     transition: 300ms;
 }
 

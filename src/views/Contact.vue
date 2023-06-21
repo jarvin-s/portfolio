@@ -5,10 +5,11 @@
                 class="bg-zinc-300 space-y-8 py-8 lg:py-16 mx-auto max-w-screen-sm dark:bg-black rounded-lg shadow-lg px-8 pt-6 mb-4">
                 <div>
                     <h1 class="mb-4 text-4xl text-black text-center dark:text-white font-bold">Interested in <span
-                        class="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-500">working</span>
+                            class="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-500">working</span>
                         together?
                     </h1>
-                    <h4 class="text-black flex dark:text-white text-left justify-center sm:text-center opacity-80">Don't hesitate and reach out today!
+                    <h4 class="text-black flex dark:text-white text-left justify-center sm:text-center opacity-80">Don't
+                        hesitate and reach out today!
                         <Icon class="flex" icon="twemoji:rocket" width="26" />
                     </h4>
                 </div>
@@ -45,7 +46,7 @@
 import { Icon } from '@iconify/vue'
 </script>
 
-<style scoped>
+<style>
 @tailwind utilities;
 
 @layer utilities {
@@ -74,7 +75,6 @@ import { Icon } from '@iconify/vue'
     color: black;
     transition: 300ms;
 }
-
 
 .btn-send-light:hover {
     color: white;
