@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-stone-50 dark:bg-zinc-900 sticky top-0 z-10">
+    <div class="bg-stone-50 dark:bg-zinc-800 sticky top-0 z-10">
         <nav class="nav-container px-6 py-8 mx-auto md:flex md:justify-between md:items-center">
             <div class="flex items-center justify-between">
                 <RouterLink to="#home" class="text-xl  md:text-2xl">
