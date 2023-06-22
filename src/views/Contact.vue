@@ -10,7 +10,7 @@
                     </h1>
                     <h4 class="text-black flex dark:text-white text-left justify-center sm:text-center opacity-80">Don't
                         hesitate and reach out today!
-                        <Icon class="flex" icon="twemoji:rocket" width="26" />
+                        <Icon class="flex ml-1" icon="twemoji:rocket" width="26" />
                     </h4>
                 </div>
                 <div>
@@ -31,8 +31,8 @@
                         class="block p-2.5 w-full text-sm text-black bg-gray-50 rounded-lg shadow-sm border border-gray-300 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
                         placeholder="Your message"></textarea>
                 </div>
-                <button
-                    class="btn-send-light dark:btn-send-dark flex dark:text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline"
+                <button @click="sendMessage()"
+                    class="btn-send-light dark:btn-send-dark flex justify-center sm:justify-start dark:text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline"
                     type="button">
                     <Icon class="mr-2 mt-0.5" icon="ion:md-send" width="24" />
                     Send message
@@ -42,8 +42,19 @@
     </div>
 </template>
 
-<script setup>
+<script>
 import { Icon } from '@iconify/vue'
+
+export default {
+    components: {
+        Icon,
+    },
+    methods: {
+        sendMessage() {
+            alert("Contact does not work as of currently.");
+        }
+    }
+}
 </script>
 
 <style>
