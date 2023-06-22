@@ -9,7 +9,7 @@
             </svg>
         </a> -->
         <button
-            class="p-2 ml-2 dark:bg-white hover:bg-neutral-500 dark:hover:bg-slate-300 transition duration-300 ease-in-out"
+            class="p-2 dark:bg-white hover:bg-neutral-500 dark:hover:bg-slate-300 transition duration-300 ease-in-out"
             @click="toggleDark()">
             <div class="dark:flex dark:color-white dark:fill-zinc-100 hidden">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="dark:fill-black w-5 h-5">
