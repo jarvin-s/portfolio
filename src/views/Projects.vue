@@ -1,38 +1,51 @@
 <template>
-    <section id="projects" class="hero">
-        <div class="container mt-10 py-6 justify-center">
-            <div class="content flex justify-center flex-col">
-                <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
-                    <!--Card 1-->
-                    <div v-for="repo in repos" :key="repo.id" class="rounded bg-white overflow-hidden shadow-lg">
-                        <img class="w-full" v-if="repo.name === repo.name" :src="`/projects/${repo.name}.png`"/>
-                        <div class="px-3 py-4">
-                            <div class="font-bold text-xl mb-2 text-black">{{ repo.name }}</div>
-                            <p class="text-gray-700 text-base">
-                                {{ repo.description }}
-                            </p>
-                        </div>
-                        <div class="px-6 pt-4 pb-2">
-                            <img class="w-10 justify-bottom" v-if="repo.language === repo.language"
-                                :src="`/languages/${repo.language}.svg`" :alt="`${repo.language} SVG`" />
-                            <div v-else>
-                                <h1 class="text-sky-400">hey</h1>
-                            </div>
-
-                            <img class="w-10 justify-bottom" v-if="repo.language === 'C#'" src="/languages/Csharp.svg" />
-                        </div>
+    <div class="target" v-motion-slide-visible-once-right>
+        <section class="bg-gray-100 dark:bg-zinc-800 px-12 pt-40 pb-80">
+            <div class="grid grid-flow gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                <div v-for="repo in repos" :key="repo.id" class="card my-8">
+                    <figure class="m-0.5">
+                        <img v-if="repo.name === repo.name" :src="`/my-projects/${repo.name}.png`"
+                            class="rounded-t h-72 w-full object-cover" />
+                    </figure>
+                    <p class="text-lg ml-4 mt-4 h-8 mb-4 font-bold text-white">
+                        {{ repo.name }}
+                    </p>
+                    <p v-if="repo.name === repo.name" class="ml-4">{{ repo.description }}</p>
+                    <div class="flex justify-center sm:justify-end mr-2 mt-6 space-x-2 mb-2">
+                        <a
+                            class="btn-send-light dark:btn-send-dark cursor-pointer flex dark:text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline"
+                            type="button">
+                            Live demo
+                            <Icon class="ml-1 " icon="clarity:pop-out-line" width="24" />
+                        </a>
+                        <a target="_blank" :href="`${repo.html_url}`"
+                            class="btn-send-light dark:btn-send-dark cursor-pointer flex dark:text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline"
+                            >
+                            Code
+                            <Icon class="ml-1 " icon="mdi:github" width="24" />
+                        </a>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
 </template>
 
 <script>
+import { Icon } from '@iconify/vue';
+
 export default {
+    components: {
+        Icon,
+    },
     data() {
         return {
-            repos: []
+            repos: [],
+            show: false,
+            Challenge_TV_Serie: "School assignment in the first year",
+            hcgroupapp: "Internship assignment for a second interview",
+            portfolio: "Personal project, creating my own portfolio",
+            Project_SunTours_jarvin: "School assignment in the first year"
         }
     },
     async mounted() {
@@ -53,3 +66,37 @@ export default {
 
 }
 </script>
+
+<style scoped>
+.card {
+    --border-size: 3px;
+    --border-angle: 0turn;
+    border-radius: 0.2rem;
+    background-image: conic-gradient(from var(--border-angle), #213, #112 50%, #213), conic-gradient(from var(--border-angle), transparent 10%, rgb(234, 0, 255), #f03);
+}
+
+.card:hover {
+    background-size: calc(100% - (var(--border-size) * 2)) calc(100% - (var(--border-size) * 2)), cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    animation: bg-spin 5s linear infinite;
+}
+
+@keyframes bg-spin {
+    to {
+        --border-angle: 1turn;
+    }
+}
+
+@property --border-angle {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0turn;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+</style>

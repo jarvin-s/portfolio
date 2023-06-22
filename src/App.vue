@@ -1,48 +1,18 @@
 <template>
   <Navbar />
-  <RouterView v-slot="{ Component, route }">
-    <Transition name="fade" mode="out-in">
-      <component :is="Component" :key="route.path" />
+  <RouterView v-slot="{ Component }">
+    <Transition mode="out-in">
+      <component :is="Component" />
     </Transition>
   </RouterView>
+  <Footer />
 </template>
 
 <script setup>
 import { RouterView } from 'vue-router'
 import Navbar from '@/components/Navbar.vue'
+import Footer from '@/views/Footer.vue'
 </script>
 
 <style>
-.fade-enter-active {
-  animation: coming 0.4s;
-  animation-delay: 0.2s;
-  opacity: 0;
-}
-
-.fade-leave-active {
-  animation: going 0.4s;
-}
-
-@keyframes going {
-  from {
-    transform: translateX(0);
-  }
-
-  to {
-    transform: translateX(-10px);
-    opacity: 0;
-  }
-}
-
-@keyframes coming {
-  from {
-    transform: translateX(-10px);
-    opacity: 0;
-  }
-
-  to {
-    transform: translateX(0px);
-    opacity: 1;
-  }
-}
 </style>
