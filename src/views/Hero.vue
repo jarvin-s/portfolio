@@ -9,18 +9,15 @@
                     <div class="absolute z-0 w-[90%] h-[35%] top-0 gradient-1"></div>
                     <div class="absolute z-0 w-[80%] h-[80%] rounded-full bottom-40 gradient-2"></div>
                     <div class="absolute z-0 w-[80%] h-[50%] right-20 bottom-20 gradient-3"></div>
-                    <div class="hero-text md:flex-row text-center md:text-left">
-                        <h1 class="font-bold dark:text-slate-300 text-center md:text-left">Hey<span class="wave">👋</span>
+                    <div class="hero-text flex md:flex-row text-center md:text-left">
+                        <h1 class="text-2xl font-bold text-blue-500 dark:text-blue-500 text-center md:text-left">Hi, my name is
                         </h1>
-                        <h1 class="text-3xl font bold dark:text-slate-300 text-center md:text-left"><span
-                                class="animate-text text-transparent text-center md:text-left bg-clip-text bg-gradient-to-br from-blue-600 to-pink-400">Jarvin
+                        <h1 class="text-6xl dark:text-slate-300 text-center md:text-left"><span
+                                class="text-center md:text-left">Jarvin
                                 Siegers</span></h1>
-                        <h1 class="font-bold text-3xl text-center md:text-left dark:text-white">Software
+                        <h1 class="text-3xl text-center md:text-left dark:text-white opacity-60">Software
                             Developer
                         </h1>
-                        <!-- <p class="text-xl text-black dark:text-white md:text-left text-center">I'm a software
-                            development student from The Netherlands.
-                        </p> -->
                         <div class="flex flex-row justify-center md:justify-start overflow-hidden items-center mt-6">
                             <div class="scroll-parent">
                                 <div class="scroll-element primary">
@@ -100,7 +97,6 @@ useMotion(targetEl, {
 
 }
 
-/* Infinite scroll animation */
 .scroll-container {
     display: flex;
     flex-direction: row;
@@ -194,7 +190,6 @@ useMotion(targetEl, {
         transform: rotate(14.0deg)
     }
 
-    /* The following five values can be played with to make the waving more or less extreme */
     20% {
         transform: rotate(-8.0deg)
     }
@@ -215,7 +210,6 @@ useMotion(targetEl, {
         transform: rotate(0.0deg)
     }
 
-    /* Reset for the last half to pause */
     100% {
         transform: rotate(0.0deg)
     }

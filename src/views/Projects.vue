@@ -11,19 +11,19 @@
                         {{ repo.name }}
                     </p>
                     <p v-if="repo.name === repo.name" class="ml-4">{{ repo.description }}</p>
-                    <div class="flex flex-col sm:flex-row justify-end mr-2 space-x-2 mb-2">
-                        <button
-                            class="btn-send-light dark:btn-send-dark flex dark:text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline"
+                    <div class="flex justify-center sm:justify-end mr-2 mt-6 space-x-2 mb-2">
+                        <a
+                            class="btn-send-light dark:btn-send-dark cursor-pointer flex dark:text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline"
                             type="button">
                             Live demo
                             <Icon class="ml-1 " icon="clarity:pop-out-line" width="24" />
-                        </button>
-                        <button
-                            class="btn-send-light dark:btn-send-dark flex dark:text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline"
-                            type="button">
+                        </a>
+                        <a target="_blank" :href="`${repo.html_url}`"
+                            class="btn-send-light dark:btn-send-dark cursor-pointer flex dark:text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline"
+                            >
                             Code
                             <Icon class="ml-1 " icon="mdi:github" width="24" />
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -73,7 +73,6 @@ export default {
     --border-angle: 0turn;
     border-radius: 0.2rem;
     background-image: conic-gradient(from var(--border-angle), #213, #112 50%, #213), conic-gradient(from var(--border-angle), transparent 10%, rgb(234, 0, 255), #f03);
-    transition: 300ms;
 }
 
 .card:hover {
