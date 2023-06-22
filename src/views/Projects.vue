@@ -1,5 +1,5 @@
 <template>
-    <div class="target" v-motion-slide-visible-once-right>
+    <div class="target" v-motion-slide-visible-once-bottom>
         <section class="bg-gray-100 dark:bg-zinc-800 px-12 pt-40 pb-80">
             <div class="grid grid-flow gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                 <div v-for="repo in repos" :key="repo.id" class="card my-8">
@@ -12,15 +12,13 @@
                     </p>
                     <p v-if="repo.name === repo.name" class="ml-4">{{ repo.description }}</p>
                     <div class="flex justify-center sm:justify-end mr-2 mt-6 space-x-2 mb-2">
-                        <a
-                            class="btn-send-light dark:btn-send-dark cursor-pointer flex dark:text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline"
+                        <a class="btn-send-light dark:btn-send-dark cursor-pointer flex dark:text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline"
                             type="button">
                             Live demo
                             <Icon class="ml-1 " icon="clarity:pop-out-line" width="24" />
                         </a>
                         <a target="_blank" :href="`${repo.html_url}`"
-                            class="btn-send-light dark:btn-send-dark cursor-pointer flex dark:text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline"
-                            >
+                            class="btn-send-light dark:btn-send-dark cursor-pointer flex dark:text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline">
                             Code
                             <Icon class="ml-1 " icon="mdi:github" width="24" />
                         </a>

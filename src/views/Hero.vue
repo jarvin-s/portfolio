@@ -10,7 +10,8 @@
                     <div class="absolute z-0 w-[80%] h-[80%] rounded-full bottom-40 gradient-2"></div>
                     <div class="absolute z-0 w-[80%] h-[50%] right-20 bottom-20 gradient-3"></div>
                     <div class="hero-text flex md:flex-row text-center md:text-left">
-                        <h1 class="text-2xl font-bold text-blue-500 dark:text-blue-500 text-center md:text-left">Hi, my name is
+                        <h1 class="text-2xl font-bold text-blue-500 dark:text-blue-500 text-center md:text-left">Hi, my name
+                            is
                         </h1>
                         <h1 class="text-6xl dark:text-slate-300 text-center md:text-left"><span
                                 class="text-center md:text-left">Jarvin
