@@ -1,6 +1,6 @@
 <template>
     <footer class="absolute w-full bottom overflow-hidden">
-        <div class="footers w-full relative bg-white text-black dark:bg-zinc-800 dark:text-white">
+        <div class="footers w-full relative bg-stone-50 text-black dark:bg-zinc-800 dark:text-white">
             <!-- <div class="footer-wave">
                 <svg id="visual" viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
