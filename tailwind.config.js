@@ -26,7 +26,10 @@ export default {
         },
         padding: {
           '500px': '500px',
-        }
+        },
+        width: {
+          '72rem': '72rem',
+        },
       },
     },
     plugins: [require("@tailwindcss/forms")

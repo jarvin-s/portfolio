@@ -8,7 +8,7 @@ import App from './App.vue'
 createApp(App).use(VueScrollTo, {
     duration: 1500,
     offset: -100,
-    cancelable: false,
+    cancelable: true,
     lazy: false,
     x: false,
     y: true

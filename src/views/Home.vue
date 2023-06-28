@@ -11,7 +11,7 @@
 import Hero from '@/views/Hero.vue'
 import About from '@/views/About.vue'
 import Projects from '@/views/Projects.vue'
-import Contact from'@/views/Contact.vue'
+import Contact from '@/views/Contact.vue'
 
 export default {
     components: {
