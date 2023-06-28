@@ -1,5 +1,4 @@
 <template>
-
     <button class="ml-2 p-2 bg-transparent hover:bg-gray-300 dark:hover:bg-zinc-600 transition duration-300 ease-in-out" @click="toggleDark()">
         <div class="dark:flex dark:color-white dark:fill-zinc-100 hidden">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="dark:fill-white w-5 h-5">

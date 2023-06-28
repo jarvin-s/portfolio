@@ -36,9 +36,7 @@
                     <RouterLink class="hover:font-bold" to="#contact" v-scroll-to="'#contact'"> Contact </RouterLink>
                 </li>
 
-                <div class="flex justify-between items-center">
-                    <DarkModeToggle />
-                </div>
+                <DarkModeToggle />
             </ul>
         </nav>
     </div>
