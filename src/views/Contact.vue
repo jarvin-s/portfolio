@@ -32,7 +32,7 @@
                         placeholder="Your message"></textarea>
                 </div>
                 <button @click="sendMessage()"
-                    class="btn-send-light dark:btn-send-dark flex justify-center sm:justify-start dark:text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline"
+                    class="btn-send-light dark:btn-send-dark flex dark:text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline"
                     type="button">
                     <Icon class="mr-2 mt-0.5" icon="ion:md-send" width="24" />
                     Send message
@@ -57,7 +57,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 @tailwind utilities;
 
 @layer utilities {
@@ -81,13 +81,12 @@ export default {
     border: solid 3px transparent;
     background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(60deg, #a80195, #e72656e0);
     background-origin: border-box;
-    box-shadow: 2px 1000px 1px white inset;
-    color: black;
+    box-shadow: 2px 1000px 1px black inset;
+    color: white;
     transition: 300ms;
 }
 
 .btn-send-light:hover {
-    color: white;
     box-shadow: none;
 }
 </style>

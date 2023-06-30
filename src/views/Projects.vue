@@ -88,6 +88,37 @@ export default {
 </script>
 
 <style scoped>
+@tailwind utilities;
+
+@layer utilities {
+    .btn-send-dark {
+        box-shadow: 0 0 6px 0 rgba(157, 96, 212, 2);
+        border: solid 3px transparent;
+        background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(60deg, #a80195, #e72656e0);
+        background-origin: border-box;
+        box-shadow: 2px 1000px 1px black inset;
+        color: white;
+        transition: 300ms;
+    }
+
+    .btn-send-dark:hover {
+        box-shadow: none;
+    }
+}
+
+.btn-send-light {
+    box-shadow: 0 0 6px 0 rgba(157, 96, 212, 2);
+    border: solid 3px transparent;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(60deg, #a80195, #e72656e0);
+    background-origin: border-box;
+    box-shadow: 2px 1000px 1px black inset;
+    color: white;
+    transition: 300ms;
+}
+
+.btn-send-light:hover {
+    box-shadow: none;
+}
 .card {
     --border-size: 3px;
     --border-angle: 0turn;

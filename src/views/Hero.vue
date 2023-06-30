@@ -9,7 +9,7 @@
                     <div class="absolute z-0 w-[90%] h-[35%] top-0 gradient-1"></div>
                     <div class="absolute z-0 w-[80%] h-[80%] rounded-full bottom-40 gradient-2"></div>
                     <div class="absolute z-0 w-[80%] h-[50%] right-20 bottom-20 gradient-3"></div>
-                    <div class="hero-text flex flex-col md:flex-row text-center md:text-left">
+                    <div class="hero-text absolute flex flex-col text-center md:text-left">
                         <h1 class="text-2xl font-bold text-blue-500 dark:text-blue-500">Hi, my name
                             is
                         </h1>
@@ -19,26 +19,11 @@
                             Developer
                         </h1>
                         <div class="flex flex-row justify-center md:justify-start overflow-hidden items-center mt-6">
-                            <div class="scroll-parent">
-                                <div class="scroll-element primary">
-                                    <img class="w-10" src="/languages/HTML.svg" />
-                                    <img class="w-10" src="/languages/CSS.svg" />
-                                    <img class="w-10" src="/languages/JavaScript.svg" />
-                                    <img class="w-10" src="/languages/Vue.svg" />
-                                    <img class="w-10" src="/languages/tailwind.svg" />
-                                    <img class="w-10" src="/languages/git.svg" />
-                                    <img class="w-10" src="/languages/mysql.svg" />
-                                </div>
-                                <div class="scroll-element secondary">
-                                    <img class="w-10" src="/languages/HTML.svg" />
-                                    <img class="w-10" src="/languages/CSS.svg" />
-                                    <img class="w-10" src="/languages/JavaScript.svg" />
-                                    <img class="w-10" src="/languages/Vue.svg" />
-                                    <img class="w-10" src="/languages/tailwind.svg" />
-                                    <img class="w-10" src="/languages/git.svg" />
-                                    <img class="w-10" src="/languages/mysql.svg" />
-                                </div>
-                            </div>
+                            <li
+                                class="btn-send-light dark:btn-send-dark uppercase cursor-pointer flex dark:text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline">
+                                <RouterLink class="hover:font-bold" to="#home" v-scroll-to="'#contact'"> Get in touch
+                                </RouterLink>
+                            </li>
                         </div>
                     </div>
                 </div>
@@ -48,6 +33,7 @@
 </template>
 
 <script>
+import { RouterLink } from 'vue-router'
 import { useMotion } from '@vueuse/motion'
 import { ref } from 'vue'
 const targetEl = ref()
@@ -62,7 +48,39 @@ useMotion(targetEl, {
 </script>
 
 <style scoped>
-.hero-img {
+@tailwind utilities;
+
+@layer utilities {
+    .btn-send-dark {
+        box-shadow: 0 0 6px 0 rgba(157, 96, 212, 2);
+        border: solid 3px transparent;
+        background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(60deg, #ba07e7,#eb1405);
+        background-origin: border-box;
+        box-shadow: 2px 1000px 1px black inset;
+        color: white;
+        transition: 300ms;
+    }
+
+    .btn-send-dark:hover {
+        box-shadow: none;
+    }
+}
+
+.btn-send-light {
+    box-shadow: 0 0 6px 0 rgba(157, 96, 212, 2);
+    border: solid 3px transparent;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(60deg, #0128d4,#eb1405);
+    background-origin: border-box;
+    box-shadow: 2px 1000px 1px black inset;
+    color: white;
+    transition: 300ms;
+}
+
+.btn-send-light:hover {
+    box-shadow: none;
+}
+
+/* .hero-img {
     -webkit-animation: morph 6s ease-in-out infinite;
     animation: morph 6s ease-in-out infinite;
     transition: all 1s ease-in-out;
@@ -80,7 +98,7 @@ useMotion(targetEl, {
     flex-direction: column;
     max-width: 50rem;
     position: relative;
-}
+} */
 
 @keyframes morph {
     0% {
@@ -95,66 +113,6 @@ useMotion(targetEl, {
         border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
     }
 
-}
-
-.scroll-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    overflow: hidden;
-    margin-top: 2rem;
-}
-
-.scroll-parent {
-    position: absolute;
-    width: 28.3vw;
-    height: 20rem;
-    padding: 2rem 0;
-    overflow-x: hidden;
-}
-
-.scroll-element {
-    width: inherit;
-    height: inherit;
-    position: absolute;
-    right: 0%;
-    top: 0%;
-    animation: primary 12s linear infinite;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.scroll-element img {
-    width: 6%;
-}
-
-.primary {
-    animation: primary 12s linear infinite;
-}
-
-.secondary {
-    animation: secondary 12s linear infinite;
-}
-
-@keyframes primary {
-    from {
-        right: 0%;
-    }
-
-    to {
-        right: -100%;
-    }
-}
-
-@keyframes secondary {
-    from {
-        right: 100%;
-    }
-
-    to {
-        right: 0%;
-    }
 }
 
 /* Gradients */
